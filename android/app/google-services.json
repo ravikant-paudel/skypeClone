@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82386907841",
+    "firebase_url": "https://skype-clone-24e39.firebaseio.com",
+    "project_id": "skype-clone-24e39",
+    "storage_bucket": "skype-clone-24e39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82386907841:android:1ba3366e893c14b3b35a40",
+        "android_client_info": {
+          "package_name": "com.ravcnt.skype_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82386907841-grnpgphj8e94ph27l3bf3daagjc969fi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravcnt.skype_clone",
+            "certificate_hash": "f002c06adf15763c2d53be336342bd9819d5505d"
+          }
+        },
+        {
+          "client_id": "82386907841-29vvmtkkmllgaknku0bju9uvknsssghs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDyynuCzDdm8bpxrKmUzKhrxu2SbMkKcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82386907841-29vvmtkkmllgaknku0bju9uvknsssghs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
