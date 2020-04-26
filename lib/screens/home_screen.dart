@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:skype_clone/utils/universal_variables.dart';
 
+import 'chat_list_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -33,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: PageView(
         physics: NeverScrollableScrollPhysics(),
         children: <Widget>[
+          Container(child: ChatListScreen()),
           Center(child: Text('Chat List Screen')),
           Center(child: Text('Call Log')),
           Center(child: Text('Contact Screen')),
