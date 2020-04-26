@@ -37,7 +37,7 @@ class FirebaseMethod {
   }
 
   Future<void> addDataToDb(FirebaseUser cUser) async {
-    String userName = Utils.getUsername(user.email);
+    String userName = Utils.getUsername(cUser.email);
     user = User(
       uid: cUser.uid,
       email: cUser.email,
@@ -45,7 +45,12 @@ class FirebaseMethod {
       profilePhoto: cUser.photoUrl,
       username: userName,
     );
-
     firestore.collection("users").document(user.uid).setData(user.toMap(user));
+  }
+
+  Future<void> signOut() async {
+    await _googleSignIn.disconnect();
+    await _googleSignIn.signOut();
+    return await _auth.signOut();
   }
 }

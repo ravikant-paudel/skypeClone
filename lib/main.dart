@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:skype_clone/resources/firebase_repository.dart';
@@ -20,7 +19,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    Firestore.instance.collection("user").document().setData({"name": "Ravikant paudel"});
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
